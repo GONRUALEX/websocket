@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Socket io chat</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href="main.css">
+    </head>
+    <body>
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output">
+
+            </div>
+            <div id="actions">
+
+            </div>
+        </div>
+        <input type="text" id="username" placeholder="User">
+        <input type="text" id="message" placeholder="Message">
+        <button id="send">send</button>
+    </div>
+
+
+
+     <!--El cliente necesita el código de websocket para poder hacer la conexión
+    bidireccional con el servidor para ello añadimos la librería socket.io-->
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+    </body>
+</html>
